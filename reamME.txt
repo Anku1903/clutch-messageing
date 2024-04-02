@@ -1,0 +1,22 @@
+initial query -------------
+
+CREATE TABLE clutch_profile (
+    url VARCHAR,
+    company VARCHAR,
+    rating VARCHAR,
+    review VARCHAR,
+    client_budget VARCHAR,
+    hourly_rate VARCHAR,
+    size VARCHAR,
+    location VARCHAR,
+    website VARCHAR,
+    send VARCHAR DEFAULT '',
+    send_time VARCHAR DEFAULT '',
+    email VARCHAR DEFAULT ''
+);
+
+
+2nd query ----------
+
+
+UPDATE clutch_profile SET size = hourly_rate,hourly_rate = '' WHERE size = '';
